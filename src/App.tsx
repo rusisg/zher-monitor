@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-// import Map from './components/Map';
 import Report from './components/Report';
 import About from './components/About';
+import MakatSoilProfile from './components/MakatSoilProfile';
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
           <Routes>
             <Route path="/" element={<About />} />
             
-            {/* Define the iframe directly here */}
             <Route 
               path="/map" 
               element={
@@ -27,6 +26,8 @@ function App() {
             />
 
             <Route path="/report" element={<Report />} />
+            
+            <Route path="/soil" element={<MakatSoilProfile />} />
           </Routes>
         </main>
       </div>
