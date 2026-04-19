@@ -28,6 +28,17 @@ function App() {
             <Route path="/report" element={<Report />} />
             
             <Route path="/soil" element={<MakatSoilProfile />} />
+
+            <Route 
+              path="/monitoring" 
+              element={
+                <iframe 
+                  src="https://storymaps.arcgis.com/stories/c05348af66df498b904b0ed9ee599a30" 
+                  className="w-full h-full border-none"
+                  title="Monitoring Map"
+                />
+              } 
+            />
           </Routes>
         </main>
       </div>

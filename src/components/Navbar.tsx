@@ -47,6 +47,10 @@ export default function Navbar() {
             <Layers size={18} />
             {t('nav_sand')}
           </Link>
+          <Link to="/monitoring" className={navLinkClass('/monitoring')}>
+            <Layers size={18} />
+            {t('nav_monitoring')}
+          </Link>
         </div>
       </div>
 
@@ -94,7 +98,11 @@ export default function Navbar() {
             </Link>
             <Link to="/soil" onClick={closeMenu} className={navLinkClass('/soil')}>
               <Layers size={18} />
-              Экология Маката
+              {t('nav_sand')}
+            </Link>
+            <Link to="/monitoring" onClick={closeMenu} className={navLinkClass('/monitoring')}>
+              <Layers size={18} />
+              {t('nav_monitoring')}
             </Link>
           </div>
           
