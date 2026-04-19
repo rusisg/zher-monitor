@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# 🌍 GeoGuard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Активная модернизация государственного контроля за землями для оперативного выявления деградации и правонарушений.**
 
-Currently, two official plugins are available:
+**GeoGuard Makat** — это интерактивная веб-ГИС платформа, разработанная для мониторинга деградации земель, засоления почв и выявления экологических правонарушений в Макатском районе (Атырауская область, Казахстан). Проект объединяет мощь спутниковой аналитики и гражданского краудсорсинга.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 **[Посмотреть Live Demo](https://zher-monitor.vercel.app/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Проблема и Решение
 
-## Expanding the ESLint configuration
+Атырауская область подвержена агрессивной деградации почв из-за засушливого климата и плотной промышленной (нефтяной) инфраструктуры. Огромные территории усложняют ручное патрулирование инспекторами.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Наше решение:** Симбиоз спутниковых данных (Google Earth Engine) и гражданского контроля. Платформа автоматически визуализирует индексы (NDVI, SAVI, VCI) для выявления "мертвых" зон, а модуль гражданских обращений позволяет жителям фиксировать правонарушения на местах, создавая замкнутую систему контроля.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Ключевые особенности (Features)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Интерактивный Dashboard:** Высокопроизводительный рендер растровых слоев (Cloud Optimized GeoTIFF) прямо в браузере поверх спутниковых карт.
+- **Экологические индексы:** Поддержка слоев NDVI, SAVI (с поправкой на голую почву), VCI (индекс засухи), LULC (классификация земель), pH и текстуры почвы.
+- **Динамическая аналитика:** Клик по любой точке карты мгновенно рассчитывает локальный риск деградации и выдает экологический срез.
+- **Модуль репортов (`/report`):** Форма для сбора жалоб от граждан с указанием точных координат и типа правонарушения (свалка, разлив нефти и т.д.).
+- **Мультиязычность (i18n):** Полная локализация интерфейса на казахский, русский и английский языки.
+- **Flat Light UI:** Современный, чистый дизайн, сфокусированный на данных.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Технологический стек
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Frontend:**
+* [React 18](https://reactjs.org/) + [Vite](https://vitejs.dev/) (TypeScript)
+* [Tailwind CSS](https://tailwindcss.com/) (Стилизация)
+* [Lucide React](https://lucide.dev/) (Иконки)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Геоинформатика (GIS):**
+* [React-Leaflet](https://react-leaflet.js.org/) (Управление картой)
+* [Georaster Layer for Leaflet](https://github.com/GeoTIFF/georaster-layer-for-leaflet) (Рендер TIF-файлов)
+* Данные экспортированы из **Google Earth Engine (GEE)** и сжаты в COG (Cloud Optimized GeoTIFF) через **GDAL**.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Деплой:**
+* Vercel
+
+---
+
+## ⚙️ Локальный запуск (Installation)
+
+Для запуска проекта на вашем компьютере потребуется [Node.js](https://nodejs.org/) (версия 20+).
+
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone [https://github.com/ВАШ_НИК/zher-monitor.git](https://github.com/ВАШ_НИК/zher-monitor.git)
+   cd zher-monitor
+   ```
+
+2. **Установите зависимости:**
+   ```bash
+   npm install
+   ```
+
+3. **Загрузите GIS-данные:**
+   Убедитесь, что все необходимые `.tif` файлы находятся в директории `public/layers/`. *(Примечание: тяжелые файлы могут не храниться в репозитории из-за ограничений GitHub).*
+
+4. **Запустите сервер разработки:**
+   ```bash
+   npm run dev
+   ```
+   Проект будет доступен по адресу `http://localhost:5173`.
+
+## 📁 Структура проекта
+
+```text
+zher-monitor/
+├── public/               
+│   ├── layers/           # GeoTIFF файлы со спутниковыми индексами
+│   └── _redirects        # Настройки маршрутизации для Vercel
+├── src/
+│   ├── components/       # React-компоненты (Map, Navbar, AnalyticsPanel, About, Report)
+│   ├── i18n/             # Настройки локализации (RU, KK, EN)
+│   ├── App.tsx           # Главный компонент с React Router
+│   └── index.css         # Глобальные стили Tailwind
+├── tailwind.config.js    # Конфигурация дизайн-системы (Цвета, Тени)
+└── package.json          # Зависимости проекта
 ```
