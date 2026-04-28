@@ -33,7 +33,7 @@ function App() {
               path="/monitoring" 
               element={
                 <iframe 
-                  src="https://storymaps.arcgis.com/stories/c05348af66df498b904b0ed9ee599a30" 
+                  src="https://arcg.is/PWnfC1" 
                   className="w-full h-full border-none"
                   title="Monitoring Map"
                 />

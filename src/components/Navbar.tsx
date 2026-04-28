@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ShieldAlert, Globe, Map as MapIcon, Info, Layers, Menu, X } from 'lucide-react';
+import { ShieldAlert, Globe, Map as MapIcon, Info, Layers, Shield, Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -48,7 +48,7 @@ export default function Navbar() {
             {t('nav_sand')}
           </Link>
           <Link to="/monitoring" className={navLinkClass('/monitoring')}>
-            <Layers size={18} />
+            <Shield size={18} />
             {t('nav_monitoring')}
           </Link>
         </div>
@@ -101,7 +101,7 @@ export default function Navbar() {
               {t('nav_sand')}
             </Link>
             <Link to="/monitoring" onClick={closeMenu} className={navLinkClass('/monitoring')}>
-              <Layers size={18} />
+              <ShieldAlert size={18} />
               {t('nav_monitoring')}
             </Link>
           </div>

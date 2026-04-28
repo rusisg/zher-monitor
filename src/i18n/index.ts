@@ -6,11 +6,11 @@ const resources = {
   en: {
     translation: {
       "app_name": "GeoGuard",
-      "nav_map": "Map",
+      "nav_map": "Degradation monitoring",
       "nav_about": "About Us",
       "nav_report": "Report Violation",
-      "nav_sand": "Soil degradation",
-      "nav_monitoring": "Monitoring",
+      "nav_sand": "Structural condition of the soil",
+      "nav_monitoring": "Law Offenses",
       "filter_title": "Map Layers",
       "about_hero_title": "GeoGuard: Eco Monitoring",
       "about_hero_text": "Upgrading state land control to detect degradation and violations quickly across the Makat district.",
@@ -32,6 +32,7 @@ const resources = {
       "about_team_ui_text": "User experience, Flat design, localization, and layout.",
       "about_team_sa_title": "Биреу",
       "about_team_sa_text": "Concept development, product logic, and presentation preparation.",
+      "image_caption_observatory": "Digital Observatory: Sentinel-2 and Landsat 8 satellite data visualize degradation (SOC, NDVI) for operational monitoring.",
       "report_title": "Report a Violation",
       "report_description": "Help us detect environmental breaches. Fill out the form below and the report will be reviewed.",
       "report_type_label": "Violation Type *",
@@ -56,10 +57,10 @@ const resources = {
       "makat_tag_water": "Moisture deficit",
       "makat_tag_soil": "High alkalinity",
       
-      "makat_metric1_title": "Critical pH (Beineu)",
+      "makat_metric1_title": "Critical pH (Makat)",
       "makat_metric1_val_sub": "Alkaline",
       "makat_metric1_desc": "High alkalinity blocks nutrient absorption by plants.",
-      "makat_metric2_title": "Scanty Humus (Beineu)",
+      "makat_metric2_title": "Scanty Humus (Makat)",
       "makat_metric2_desc": "Critically low level of organic matter at a depth of 12-40 cm.",
       "makat_metric3_title": "Research Volume",
       "makat_metric3_val_sub": "samples",
@@ -93,7 +94,7 @@ const resources = {
       
       "loc_tx": "Plot TX (p-1)",
       "loc_xm": "Plot XM (p-3)",
-      "loc_beineu": "Beineu (p-4)",
+      "loc_beineu": "Makat (p-4)",
       "loc_kq": "KQ (p-5)",
       "loc_qvod": "Q.vod (p-6)"
     }
@@ -101,11 +102,11 @@ const resources = {
   ru: {
     translation: {
       "app_name": "GeoGuard",
-      "nav_map": "Карта",
+      "nav_map": "Мониторинг деградации",
       "nav_about": "О проекте",
       "nav_report": "Сообщить о нарушении",
-      "nav_sand": "Деградация почвы",
-      "nav_monitoring": "Мониторинг",
+      "nav_sand": "Структурное состояние почвы",
+      "nav_monitoring": "Правонарушение",
       "filter_title": "Слои карты",
       "about_hero_title": "GeoGuard: Эко-Мониторинг",
       "about_hero_text": "Активная модернизация государственного контроля за землями для оперативного выявления деградации и правонарушений в Макатском районе.",
@@ -151,10 +152,10 @@ const resources = {
       "makat_tag_water": "Дефицит влаги",
       "makat_tag_soil": "Высокая щелочность",
       
-      "makat_metric1_title": "Критический pH (Бейнеу)",
+      "makat_metric1_title": "Критический pH (Макат)",
       "makat_metric1_val_sub": "Щелочной",
       "makat_metric1_desc": "Высокая щелочность блокирует усвоение питательных веществ растениями.",
-      "makat_metric2_title": "Скудный гумус (Бейнеу)",
+      "makat_metric2_title": "Скудный гумус (Макат)",
       "makat_metric2_desc": "Критически низкий уровень органики на глубине 12-40 см.",
       "makat_metric3_title": "Объем исследования",
       "makat_metric3_val_sub": "проб",
@@ -188,7 +189,7 @@ const resources = {
       
       "loc_tx": "Уч. ТХ (р-1)",
       "loc_xm": "Уч. ХМ (р-3)",
-      "loc_beineu": "Бейнеу (р-4)",
+      "loc_beineu": "Макат (р-4)",
       "loc_kq": "КҚ (р-5)",
       "loc_qvod": "Қ.вод (р-6)"
     }
@@ -196,11 +197,11 @@ const resources = {
   kk: {
     translation: {
       "app_name": "GeoGuard",
-      "nav_map": "Карта",
+      "nav_map": "Деградациялық мониторинг",
       "nav_about": "Жоба туралы",
       "nav_report": "Заң бұзушылық туралы хабарлау",
-      "nav_sand": "Топырақ деградациясы",
-      "nav_monitoring": "Мониторинг",
+      "nav_sand": "Топырақтың құрылымдық жағдайы",
+      "nav_monitoring": "Кұқықбұзушылықтар",
       "filter_title": "Карта қабаттары",
       "about_hero_title": "GeoGuard: Эко-Бақылау",
       "about_hero_text": "Мақат ауданындағы жерлерді деградация мен бұзушылықтарды жылдам анықтауға мемлекеттік бақылауды жаңарту.",
@@ -222,6 +223,7 @@ const resources = {
       "about_team_ui_text": "Пайдаланушы тәжірибесін, Flat дизайнды, локализацияны және макетті жобалау.",
       "about_team_sa_title": "Биреу",
       "about_team_sa_text": "Тұжырымдама әзірлеу, өнім логикасы және презентация дайындау.",
+      "image_caption_observatory": "Цифрлық обсерватория: Sentinel-2 және Landsat 8 спутниктік деректері деградацияны (SOC, NDVI) визуализациялайды, бұл оперативті мониторинг үшін маңызды.",
       "report_title": "Бұзушылық туралы хабарлау",
       "report_description": "Экологиялық бұзушылықтарды анықтауға көмектесіңіз. Төмендегі форманы толтырыңыз, және есеп тексеріледі.",
       "report_type_label": "Бұзушылық түрі *",
@@ -246,10 +248,10 @@ const resources = {
       "makat_tag_water": "Ылғал тапшылығы",
       "makat_tag_soil": "Жоғары сілтілік",
       
-      "makat_metric1_title": "Қауіпті pH (Бейнеу)",
+      "makat_metric1_title": "Қауіпті pH (Макат)",
       "makat_metric1_val_sub": "Сілтілі",
       "makat_metric1_desc": "Жоғары сілтілік өсімдіктердің қоректік заттарды сіңіруіне кедергі келтіреді.",
-      "makat_metric2_title": "Тапшы гумус (Бейнеу)",
+      "makat_metric2_title": "Тапшы гумус (Макат)",
       "makat_metric2_desc": "12-40 см тереңдіктегі органикалық заттардың өте төмен деңгейі.",
       "makat_metric3_title": "Зерттеу көлемі",
       "makat_metric3_val_sub": "сынама",
@@ -283,7 +285,7 @@ const resources = {
       
       "loc_tx": "ТХ учаскесі (р-1)",
       "loc_xm": "ХМ учаскесі (р-3)",
-      "loc_beineu": "Бейнеу (р-4)",
+      "loc_beineu": "Макат (р-4)",
       "loc_kq": "КҚ (р-5)",
       "loc_qvod": "Қ.вод (р-6)"
     }

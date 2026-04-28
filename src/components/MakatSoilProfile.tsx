@@ -10,8 +10,8 @@ export default function MakatSoilProfile() {
     { id: 1, location: t('loc_tx', 'Уч. ТХ (р-1)'), depth: '0-20', ph: 8.5, humus: 1.35, nitrogen: 0.077, phosphorus: 0.12, co2: 9.09, calcium: 12.0 },
     { id: 2, location: t('loc_tx', 'Уч. ТХ (р-1)'), depth: '20-40', ph: 9.2, humus: 1.50, nitrogen: 0.086, phosphorus: 0.13, co2: 10.80, calcium: 12.8 },
     { id: 3, location: t('loc_xm', 'Уч. ХМ (р-3)'), depth: '0-20', ph: 8.7, humus: 1.50, nitrogen: 0.086, phosphorus: 0.13, co2: 7.03, calcium: 12.0 },
-    { id: 4, location: t('loc_beineu', 'Бейнеу (р-4)'), depth: '0-8', ph: 8.3, humus: 0.47, nitrogen: 0.029, phosphorus: 0.05, co2: 6.00, calcium: 2.4 },
-    { id: 5, location: t('loc_beineu', 'Бейнеу (р-4)'), depth: '12-40', ph: 9.0, humus: 0.21, nitrogen: 0.014, phosphorus: 0.02, co2: 3.43, calcium: 2.0 },
+    { id: 4, location: t('loc_beineu', 'Макат (р-4)'), depth: '0-8', ph: 8.3, humus: 0.47, nitrogen: 0.029, phosphorus: 0.05, co2: 6.00, calcium: 2.4 },
+    { id: 5, location: t('loc_beineu', 'Макат (р-4)'), depth: '12-40', ph: 9.0, humus: 0.21, nitrogen: 0.014, phosphorus: 0.02, co2: 3.43, calcium: 2.0 },
     { id: 6, location: t('loc_kq', 'КҚ (р-5)'), depth: '0-11', ph: 8.1, humus: 1.24, nitrogen: 0.077, phosphorus: 0.09, co2: 0.34, calcium: 18.4 },
     { id: 7, location: t('loc_qvod', 'Қ.вод (р-6)'), depth: '0-11', ph: 8.4, humus: 1.05, nitrogen: 0.065, phosphorus: 0.08, co2: 0.00, calcium: 14.2 },
   ], [t]); // Добавили t в зависимости useMemo
